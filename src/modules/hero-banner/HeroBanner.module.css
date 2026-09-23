@@ -1,0 +1,51 @@
+/**
+ * @file HeroBanner.module.css
+ * @description HeroBanner.tsx 스타일 — 768px 미만은 세로 스택, 이상은 이미지 위 오버레이
+ * @author kamiz
+ * @created 2026-09-23
+ * @modified 2026-09-23
+ */
+
+.hero {
+  position: relative;
+}
+
+.overlay {
+  padding: var(--space-5) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.title {
+  font-size: var(--text-xl);
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-fg-muted);
+  margin: 0;
+}
+
+.period {
+  font-size: var(--text-sm);
+  color: var(--color-fg-muted);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    padding: 0 var(--space-6);
+    color: #ffffff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+  }
+
+  .subtitle,
+  .period {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}

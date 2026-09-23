@@ -1,0 +1,45 @@
+/**
+ * @file BenefitCards.module.css
+ * @description BenefitCards.tsx 스타일 — 2~4열 자동 그리드
+ * @author kamiz
+ * @created 2026-09-23
+ * @modified 2026-09-23
+ */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.icon {
+  font-size: var(--text-2xl);
+}
+
+.title {
+  font-weight: 600;
+  margin: 0;
+}
+
+.description {
+  color: var(--color-fg-muted);
+  font-size: var(--text-sm);
+  margin: 0;
+}

@@ -68,6 +68,27 @@ promo-event-kit/
 5. `<Module>.test.tsx` 작성
 6. `src/registry.ts`에 `type → { component, schema }` 등록
 
+## 파일 헤더 & 함수 주석 규칙
+
+새로 만드는 모든 코드 파일(`.ts`/`.tsx`/`.css`) 맨 위에 헤더 주석을 단다. JSON은 주석을 지원하지
+않으므로 예외.
+
+```typescript
+/**
+ * @file Button.tsx
+ * @description 공통 버튼 — variant/size, href 지정 시 <a>로 렌더링
+ * @author kamiz
+ * @created 2026-09-23
+ * @modified 2026-09-23
+ */
+```
+
+- `@author`는 `git config user.name` 값(코드 변경 이력 주석의 `@author`와 동일 소스)
+- `@created`는 최초 생성일 — 이후 수정해도 바꾸지 않는다
+- `@modified`는 그 파일을 건드릴 때마다 그날 날짜로 갱신한다
+- 함수/메서드에도 무엇을 하는지 한 줄 이상 주석을 단다(자명한 1줄짜리 getter성 함수는 생략 가능) —
+  전역 `CLAUDE.md`의 "주석은 WHY가 비자명할 때만"보다 이 팀 규칙이 우선한다(팀 규칙 최우선 원칙)
+
 ## 설계 원칙 (위반하면 안 됨)
 
 - **모듈은 데이터를 직접 안 불러온다** — props만 받는다. 상품 조회 등은 서버 컴포넌트가 처리해서

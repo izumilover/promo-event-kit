@@ -1,0 +1,19 @@
+/**
+ * @file page.module.css
+ * @description 기획전 상세 페이지 헤더(제목/기간) 스타일
+ * @author kamiz
+ * @created 2026-09-23
+ * @modified 2026-09-23
+ */
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) 0;
+}
+
+.period {
+  color: var(--color-fg-muted);
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+}

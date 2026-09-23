@@ -1,0 +1,26 @@
+/**
+ * @file Section.module.css
+ * @description Section.tsx 스타일 — 상하 여백, 배경(none/subtle), 최대폭 컨테이너
+ * @author kamiz
+ * @created 2026-09-23
+ * @modified 2026-09-23
+ */
+
+.section {
+  padding: var(--space-7) 0;
+  scroll-margin-top: var(--space-7);
+}
+
+.none {
+  background: transparent;
+}
+
+.subtle {
+  background: var(--color-bg-subtle);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}

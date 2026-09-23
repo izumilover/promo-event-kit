@@ -4,9 +4,11 @@
   "orientationNote": "정적 + 경량 mock Route Handler (backend-dev 미투입, 오케스트레이터가 직접 작성)",
   "collaboration": "team",
   "collaborationNote": "실제 1인 + 가상 4역할(A/B/C/D) 브랜치 시뮬레이션, PR 리뷰는 다른 Claude 세션",
-  "branch": "feature/promo-event-module",
-  "phase": "plan",
+  "branch": "feat/foundation",
+  "phase": "do",
   "matchRate": null,
   "iterationCount": 0,
-  "updatedAt": "2026-09-23T20:00:00Z"
+  "prUrl": "https://github.com/izumilover/promo-event-kit/pull/1",
+  "note": "A(기반) 완료, PR #1 오픈. 다음: A 머지 후 B(전시)/C(상품)/D(이벤트) 병렬 진행",
+  "updatedAt": "2026-09-23T21:55:00Z"
 }

@@ -1,0 +1,14 @@
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+}
+
+.main h1 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.main p {
+  color: var(--color-fg-muted);
+}

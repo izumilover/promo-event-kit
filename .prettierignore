@@ -1,0 +1,11 @@
+.next
+node_modules
+coverage
+playwright-report
+test-results
+storybook-static
+package-lock.json
+
+# 하네스 문서(react-webapp 등)는 원본 그대로 유지 — 여기서 재포맷하지 않는다
+.claude/agents
+.claude/skills

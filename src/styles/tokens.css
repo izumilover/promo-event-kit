@@ -1,0 +1,48 @@
+/* 디자인 토큰 — 색상/여백/타이포/라운드의 단일 소스.
+   컴포넌트에서 색상·여백 값을 직접 쓰지 않고 반드시 이 변수를 참조한다 (하드코딩 금지).
+   기획전별 강조색(accent)은 JSON의 theme.accent로 개별 오버라이드된다 — 여기 정의된
+   --color-accent는 값이 없을 때의 기본값일 뿐이다. */
+
+:root {
+  /* 색상 — 중립 팔레트 (실제 브랜드 컬러는 입사 후 확인, 지금은 샘플 값) */
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f5f5f5;
+  --color-fg: #1a1a1a;
+  --color-fg-muted: #6b6b6b;
+  --color-border: #e2e2e2;
+  --color-accent: #2563eb;
+  --color-accent-fg: #ffffff;
+  --color-danger: #dc2626;
+
+  /* 여백 스케일 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* 타이포 */
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 36px;
+
+  /* 라운드/그림자 */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* 브레이크포인트 (CSS Modules에서 @media (min-width: var(--bp-md)) 형태로는 못 씀 —
+     문서화 목적. 실제 미디어쿼리는 아래 상수값을 직접 사용) */
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+}

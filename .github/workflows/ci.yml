@@ -12,7 +12,9 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          # jsdom 30.x가 Node 20을 지원하지 않는다(engines: ^22.22.2 || ^24.15.0 || >=26) —
+          # Node 20으로 CI를 돌리면 "webidl.util.markAsUncloneable is not a function"으로 테스트가 깨진다.
+          node-version: "24"
           cache: "npm"
       - run: npm ci
       - run: npm run format:check

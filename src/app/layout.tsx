@@ -1,4 +1,12 @@
+/**
+ * @file layout.tsx
+ * @description 루트 레이아웃 — 폰트 변수, 전역 메타데이터
+ * @author kamiz
+ * @created 2026-09-23
+ * @modified 2026-09-23
+ */
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -17,7 +25,7 @@ export const metadata: Metadata = {
   description: "JSON 설정으로 조립하는 기획전/이벤트 공통 모듈 데모",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ko" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>{children}</body>

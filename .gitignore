@@ -46,3 +46,8 @@ next-env.d.ts
 
 *storybook.log
 storybook-static
+
+# bkit 플러그인 내부 상태(이 프로젝트는 bkit PDCA를 쓰지 않지만, 세션 내내 훅이
+# 자동으로 재생성한다 — 프로젝트 데이터가 아니므로 커밋하지 않는다)
+/.bkit/
+/debug-storybook.log

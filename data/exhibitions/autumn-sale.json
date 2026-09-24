@@ -1,0 +1,60 @@
+{
+  "id": "autumn-sale",
+  "title": "가을맞이 소모품 특가전",
+  "period": { "start": "2026-10-01", "end": "2026-10-31" },
+  "theme": { "accent": "#e4002b" },
+  "sections": [
+    {
+      "type": "heroBanner",
+      "id": "hero",
+      "props": {
+        "title": "최대 30% 할인",
+        "subtitle": "가을맞이 소모품 특가전",
+        "periodLabel": "2026.10.1 ~ 2026.10.31",
+        "image": { "pc": "/globe.svg", "mo": "/window.svg", "alt": "가을 특가" },
+        "cta": { "label": "지금 보기", "href": "#products" }
+      }
+    },
+    {
+      "type": "bannerCarousel",
+      "id": "promo",
+      "props": {
+        "slides": [
+          {
+            "id": "slide-1",
+            "title": "한정 수량 특가",
+            "badge": "한정 수량",
+            "periodLabel": "선착순 100명",
+            "image": { "pc": "/globe.svg", "mo": "/window.svg", "alt": "한정 수량 특가" }
+          },
+          {
+            "id": "slide-2",
+            "title": "신상품 소모품",
+            "href": "#products",
+            "image": { "pc": "/file.svg", "mo": "/next.svg", "alt": "신상품" }
+          }
+        ],
+        "autoplayInterval": 4000
+      }
+    },
+    {
+      "type": "benefitCards",
+      "id": "benefits",
+      "props": {
+        "items": [
+          {
+            "icon": "cardDiscount",
+            "title": "카드 할인",
+            "description": "제휴 카드 결제 시 5% 추가 할인"
+          },
+          { "icon": "gift", "title": "사은품", "description": "10만원 이상 구매 시 사은품 증정" },
+          {
+            "icon": "membership",
+            "title": "멤버십 적립",
+            "description": "구매 금액의 3% 포인트 적립"
+          }
+        ]
+      }
+    }
+  ]
+}

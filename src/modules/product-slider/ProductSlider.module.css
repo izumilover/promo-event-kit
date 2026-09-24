@@ -1,0 +1,45 @@
+/**
+ * @file ProductSlider.module.css
+ * @description ProductSlider.tsx 스타일 — scroll-snap 가로 스크롤 트랙
+ * @author kamiz
+ * @created 2026-09-24
+ * @modified 2026-09-24
+ */
+
+.wrapper {
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--space-2);
+}
+
+.item {
+  flex: 0 0 180px;
+  scroll-snap-align: start;
+}
+
+.controls {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.controls button {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+  font-size: var(--text-md);
+}
+
+.controls button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

@@ -16,6 +16,17 @@
       }
     },
     {
+      "type": "anchorTabs",
+      "id": "tabs",
+      "props": {
+        "items": [
+          { "label": "혜택", "target": "benefits" },
+          { "label": "상품", "target": "products" }
+        ],
+        "sticky": true
+      }
+    },
+    {
       "type": "bannerCarousel",
       "id": "promo",
       "props": {
@@ -52,6 +63,44 @@
             "icon": "membership",
             "title": "멤버십 적립",
             "description": "구매 금액의 3% 포인트 적립"
+          }
+        ]
+      }
+    },
+    {
+      "type": "productGrid",
+      "id": "products",
+      "props": {
+        "columns": 4,
+        "products": [
+          {
+            "id": "p1",
+            "name": "무선 이어폰",
+            "price": 89000,
+            "image": { "src": "/globe.svg", "alt": "무선 이어폰" },
+            "href": "#"
+          },
+          {
+            "id": "p2",
+            "name": "블루투스 스피커",
+            "price": 39000,
+            "originalPrice": 59000,
+            "image": { "src": "/file.svg", "alt": "블루투스 스피커" },
+            "href": "#"
+          },
+          {
+            "id": "p3",
+            "name": "보조 배터리",
+            "price": 25000,
+            "image": { "src": "/window.svg", "alt": "보조 배터리" },
+            "href": "#"
+          },
+          {
+            "id": "p4",
+            "name": "케이블 세트",
+            "price": 12000,
+            "image": { "src": "/next.svg", "alt": "케이블 세트" },
+            "href": "#"
           }
         ]
       }

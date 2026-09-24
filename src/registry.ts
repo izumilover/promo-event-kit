@@ -5,7 +5,7 @@
  *   그 모듈을 바로 렌더링할 수 있게 된다(CLAUDE.md "모듈 추가 절차" 6단계).
  * @author kamiz
  * @created 2026-09-23
- * @modified 2026-09-23
+ * @modified 2026-09-24
  */
 import type { ComponentType } from "react";
 import type { ZodType } from "zod";
@@ -15,6 +15,12 @@ import { BannerCarousel } from "@/modules/banner-carousel/BannerCarousel";
 import { BannerCarouselSchema } from "@/modules/banner-carousel/schema";
 import { BenefitCards } from "@/modules/benefit-cards/BenefitCards";
 import { BenefitCardsSchema } from "@/modules/benefit-cards/schema";
+import { ProductGrid } from "@/modules/product-grid/ProductGrid";
+import { ProductGridSchema } from "@/modules/product-grid/schema";
+import { ProductSlider } from "@/modules/product-slider/ProductSlider";
+import { ProductSliderSchema } from "@/modules/product-slider/schema";
+import { AnchorTabs } from "@/modules/anchor-tabs/AnchorTabs";
+import { AnchorTabsSchema } from "@/modules/anchor-tabs/schema";
 
 export type ModuleRegistryEntry<TProps = unknown> = {
   component: ComponentType<TProps>;
@@ -34,4 +40,7 @@ export const moduleRegistry: Record<string, ModuleRegistryEntry<any>> = {
   heroBanner: { component: HeroBanner, schema: HeroBannerSchema },
   bannerCarousel: { component: BannerCarousel, schema: BannerCarouselSchema },
   benefitCards: { component: BenefitCards, schema: BenefitCardsSchema },
+  productGrid: { component: ProductGrid, schema: ProductGridSchema },
+  productSlider: { component: ProductSlider, schema: ProductSliderSchema },
+  anchorTabs: { component: AnchorTabs, schema: AnchorTabsSchema },
 };

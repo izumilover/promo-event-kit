@@ -1,0 +1,43 @@
+/**
+ * @file AnchorTabs.module.css
+ * @description AnchorTabs.tsx 스타일 — sticky 탭바 + 활성 탭 하이라이트
+ * @author kamiz
+ * @created 2026-09-24
+ * @modified 2026-09-24
+ */
+
+.tabs {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tab {
+  flex: 0 0 auto;
+  padding: var(--space-3) var(--space-4);
+  border: none;
+  background: none;
+  font-size: var(--text-sm);
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+.active {
+  color: var(--color-fg);
+  font-weight: 600;
+  border-bottom-color: var(--color-accent);
+}

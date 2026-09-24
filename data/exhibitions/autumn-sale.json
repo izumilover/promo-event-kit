@@ -8,11 +8,11 @@
       "type": "heroBanner",
       "id": "hero",
       "props": {
-        "title": "최대 30% 할인",
+        "title": "LG모니터 통합 기획전",
         "subtitle": "가을맞이 소모품 특가전",
         "periodLabel": "2026.10.1 ~ 2026.10.31",
         "image": { "pc": "/globe.svg", "mo": "/window.svg", "alt": "가을 특가" },
-        "cta": { "label": "지금 보기", "href": "#products" }
+        "cta": { "label": "지금 보기", "href": "#best-model" }
       }
     },
     {
@@ -28,9 +28,9 @@
       "id": "tabs",
       "props": {
         "items": [
-          { "label": "쿠폰", "target": "coupon" },
-          { "label": "혜택", "target": "benefits" },
-          { "label": "상품", "target": "products" }
+          { "label": "구매혜택", "target": "purchase-benefit" },
+          { "label": "제품라인업", "target": "product-lineup" },
+          { "label": "베스트모델", "target": "best-model" }
         ],
         "sticky": true
       }
@@ -70,7 +70,7 @@
     },
     {
       "type": "benefitCards",
-      "id": "benefits",
+      "id": "purchase-benefit",
       "props": {
         "items": [
           {
@@ -88,8 +88,30 @@
       }
     },
     {
+      "type": "bannerCarousel",
+      "id": "product-lineup",
+      "props": {
+        "slides": [
+          {
+            "id": "slide-1",
+            "title": "게이밍 모니터",
+            "badge": "한정 수량",
+            "periodLabel": "선착순 100명",
+            "image": { "pc": "/file.svg", "mo": "/window.svg", "alt": "게이밍모니터" }
+          },
+          {
+            "id": "slide-2",
+            "title": "신상품 소모품",
+            "href": "#best-model",
+            "image": { "pc": "/file.svg", "mo": "/next.svg", "alt": "신상품" }
+          }
+        ],
+        "autoplayInterval": 4000
+      }
+    },
+    {
       "type": "productGrid",
-      "id": "products",
+      "id": "best-model",
       "props": {
         "columns": 4,
         "products": [

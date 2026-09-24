@@ -1,0 +1,47 @@
+/**
+ * @file NoticeAccordion.module.css
+ * @description NoticeAccordion.tsx 스타일
+ * @author kamiz
+ * @created 2026-09-24
+ * @modified 2026-09-24
+ */
+
+.wrapper {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: none;
+  border: none;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-fg);
+}
+
+.chevron {
+  transition: transform 0.15s ease;
+}
+
+.chevron[data-open="true"] {
+  transform: rotate(180deg);
+}
+
+.content {
+  margin: 0;
+  padding: 0 var(--space-4) var(--space-4);
+  list-style: disc;
+  padding-left: var(--space-6);
+  color: var(--color-fg-muted);
+  font-size: var(--text-sm);
+}
+
+.content li {
+  margin-bottom: var(--space-1);
+}

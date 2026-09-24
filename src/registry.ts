@@ -21,6 +21,16 @@ import { ProductSlider } from "@/modules/product-slider/ProductSlider";
 import { ProductSliderSchema } from "@/modules/product-slider/schema";
 import { AnchorTabs } from "@/modules/anchor-tabs/AnchorTabs";
 import { AnchorTabsSchema } from "@/modules/anchor-tabs/schema";
+import { NoticeAccordion } from "@/modules/notice-accordion/NoticeAccordion";
+import { NoticeAccordionSchema } from "@/modules/notice-accordion/schema";
+import { CountdownTimer } from "@/modules/countdown-timer/CountdownTimer";
+import { CountdownTimerSchema } from "@/modules/countdown-timer/schema";
+import { ShareBar } from "@/modules/share-bar/ShareBar";
+import { ShareBarSchema } from "@/modules/share-bar/schema";
+import { CouponDownload } from "@/modules/coupon-download/CouponDownload";
+import { CouponDownloadSchema } from "@/modules/coupon-download/schema";
+import { EventEntryForm } from "@/modules/event-entry-form/EventEntryForm";
+import { EventEntryFormSchema } from "@/modules/event-entry-form/schema";
 
 export type ModuleRegistryEntry<TProps = unknown> = {
   component: ComponentType<TProps>;
@@ -43,4 +53,9 @@ export const moduleRegistry: Record<string, ModuleRegistryEntry<any>> = {
   productGrid: { component: ProductGrid, schema: ProductGridSchema },
   productSlider: { component: ProductSlider, schema: ProductSliderSchema },
   anchorTabs: { component: AnchorTabs, schema: AnchorTabsSchema },
+  noticeAccordion: { component: NoticeAccordion, schema: NoticeAccordionSchema },
+  countdownTimer: { component: CountdownTimer, schema: CountdownTimerSchema },
+  shareBar: { component: ShareBar, schema: ShareBarSchema },
+  couponDownload: { component: CouponDownload, schema: CouponDownloadSchema },
+  eventEntryForm: { component: EventEntryForm, schema: EventEntryFormSchema },
 };

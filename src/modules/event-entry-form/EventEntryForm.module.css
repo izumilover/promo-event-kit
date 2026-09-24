@@ -1,0 +1,58 @@
+/**
+ * @file EventEntryForm.module.css
+ * @description EventEntryForm.tsx 스타일
+ * @author kamiz
+ * @created 2026-09-24
+ * @modified 2026-09-24
+ */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 420px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.field input[type="text"],
+.field input:not([type="checkbox"]) {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-md);
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 400;
+}
+
+.error {
+  color: var(--color-danger);
+  font-size: var(--text-xs);
+  margin: 0;
+}
+
+.notice {
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.success {
+  color: var(--color-fg);
+  font-weight: 600;
+}

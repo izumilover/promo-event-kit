@@ -4,33 +4,16 @@
  *   상호작용(자동재생/이전·다음/일시정지)이 있어 클라이언트 컴포넌트로 구현한다.
  * @author kamiz
  * @created 2026-09-23
- * @modified 2026-09-23
+ * @modified 2026-09-24
  */
 "use client";
 
 import { useEffect, useRef, useState } from "react";
 import { ResponsiveImage } from "@/components/ui/ResponsiveImage/ResponsiveImage";
 import { Badge } from "@/components/ui/Badge/Badge";
+import { usePrefersReducedMotion } from "@/lib/usePrefersReducedMotion";
 import type { BannerCarouselProps } from "./schema";
 import styles from "./BannerCarousel.module.css";
-
-/** OS/브라우저의 "동작 줄이기" 설정을 읽어 자동재생 기본 여부를 정한다 */
-function usePrefersReducedMotion() {
-  // 초기값은 lazy initializer로 동기 계산 — effect 안에서 setState를 바로 호출하면
-  // 불필요한 리렌더가 하나 더 생긴다(react-hooks/set-state-in-effect 규칙 대상).
-  const [reduced, setReduced] = useState(() =>
-    typeof window === "undefined"
-      ? false
-      : window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-  );
-  useEffect(() => {
-    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const onChange = () => setReduced(query.matches);
-    query.addEventListener("change", onChange);
-    return () => query.removeEventListener("change", onChange);
-  }, []);
-  return reduced;
-}
 
 export function BannerCarousel({ slides, autoplayInterval }: BannerCarouselProps) {
   const [index, setIndex] = useState(0);

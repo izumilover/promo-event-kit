@@ -1,0 +1,35 @@
+/**
+ * @file ProductCard.module.css
+ * @description ProductCard.tsx 스타일
+ * @author kamiz
+ * @created 2026-09-24
+ * @modified 2026-09-24
+ */
+
+.card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-subtle);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.name {
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--color-fg);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

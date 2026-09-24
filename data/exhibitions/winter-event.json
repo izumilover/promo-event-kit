@@ -1,0 +1,56 @@
+{
+  "id": "winter-event",
+  "title": "겨울맞이 신상품 이벤트",
+  "period": { "start": "2026-12-01", "end": "2026-12-31" },
+  "theme": { "accent": "#2563eb" },
+  "sections": [
+    {
+      "type": "heroBanner",
+      "id": "hero",
+      "props": {
+        "title": "겨울 신상품 모음",
+        "image": { "pc": "/next.svg", "mo": "/vercel.svg", "alt": "겨울 신상품" }
+      }
+    },
+    {
+      "type": "productSlider",
+      "id": "new-products",
+      "props": {
+        "products": [
+          {
+            "id": "w1",
+            "name": "겨울 액세서리",
+            "price": 32000,
+            "image": { "src": "/globe.svg", "alt": "겨울 액세서리" },
+            "href": "#"
+          },
+          {
+            "id": "w2",
+            "name": "보온 케이스",
+            "price": 18000,
+            "image": { "src": "/file.svg", "alt": "보온 케이스" },
+            "href": "#"
+          },
+          {
+            "id": "w3",
+            "name": "선물 세트",
+            "price": 45000,
+            "originalPrice": 55000,
+            "image": { "src": "/window.svg", "alt": "선물 세트" },
+            "href": "#"
+          }
+        ]
+      }
+    },
+    {
+      "type": "benefitCards",
+      "id": "benefits",
+      "props": {
+        "items": [
+          { "icon": "shipping", "title": "무료 배송", "description": "전 상품 무료 배송" },
+          { "icon": "point", "title": "포인트 2배", "description": "12월 한정 적립 2배" }
+        ]
+      }
+    }
+  ]
+}

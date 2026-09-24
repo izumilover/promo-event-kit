@@ -1,0 +1,35 @@
+/**
+ * @file CouponDownload.module.css
+ * @description CouponDownload.tsx 스타일
+ * @author kamiz
+ * @created 2026-09-24
+ * @modified 2026-09-24
+ */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.label {
+  flex: 1;
+  font-size: var(--text-sm);
+}
+
+.result {
+  font-size: var(--text-xs);
+  color: var(--color-fg-muted);
+}

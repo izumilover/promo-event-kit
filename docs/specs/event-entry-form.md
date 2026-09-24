@@ -21,6 +21,7 @@ type EventEntryFormProps = {
 ## Mock API
 
 `POST /api/event-entries` — body `{ eventId, name, phone }`
+
 - 응답 `{ status: "submitted" }`
 - 서버가 in-memory Set으로 `eventId+phone` 조합을 기억해뒀다가 같은 값이 다시 오면
   `{ status: "duplicate" }` 반환(서버 재시작 시 초기화되는 mock)

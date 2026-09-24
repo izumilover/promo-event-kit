@@ -16,10 +16,19 @@
       }
     },
     {
+      "type": "countdownTimer",
+      "id": "countdown",
+      "props": {
+        "endAt": "2026-10-31T23:59:59+09:00",
+        "endedLabel": "이벤트가 종료되었습니다"
+      }
+    },
+    {
       "type": "anchorTabs",
       "id": "tabs",
       "props": {
         "items": [
+          { "label": "쿠폰", "target": "coupon" },
           { "label": "혜택", "target": "benefits" },
           { "label": "상품", "target": "products" }
         ],
@@ -46,6 +55,17 @@
           }
         ],
         "autoplayInterval": 4000
+      }
+    },
+    {
+      "type": "couponDownload",
+      "id": "coupon",
+      "props": {
+        "coupons": [
+          { "id": "autumn-10000", "amount": 10000, "minPrice": 100000 },
+          { "id": "autumn-5000", "amount": 5000 },
+          { "id": "autumn-soldout-3000", "amount": 3000 }
+        ]
       }
     },
     {
@@ -102,6 +122,32 @@
             "image": { "src": "/next.svg", "alt": "케이블 세트" },
             "href": "#"
           }
+        ]
+      }
+    },
+    {
+      "type": "eventEntryForm",
+      "id": "entry",
+      "props": {
+        "eventId": "autumn-sale-entry",
+        "privacyNotice": "응모 처리를 위해 이름/연락처를 수집하며, 이벤트 종료 후 즉시 파기합니다. 동의합니다."
+      }
+    },
+    {
+      "type": "shareBar",
+      "id": "share",
+      "props": {
+        "channels": ["kakao", "facebook", "url"]
+      }
+    },
+    {
+      "type": "noticeAccordion",
+      "id": "notice",
+      "props": {
+        "items": [
+          "쿠폰은 1인 1회 사용 가능합니다.",
+          "본 행사는 당사 사정에 의해 예고 없이 변경/종료될 수 있습니다.",
+          "일부 상품은 재고 소진 시 조기 종료될 수 있습니다."
         ]
       }
     }

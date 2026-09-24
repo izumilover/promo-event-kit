@@ -26,6 +26,7 @@ type CouponDownloadProps = {
 ## Mock API
 
 `POST /api/coupons/claim` — body `{ couponId: string }`
+
 - 응답 `{ status: "claimed" }` — 성공
 - 응답 `{ status: "sold-out" }` — (mock) 특정 쿠폰은 항상 소진 상태로 고정해 UI 분기를 보여줌
 - 이미 발급받은 쿠폰을 다시 요청하면 `{ status: "already-claimed" }`

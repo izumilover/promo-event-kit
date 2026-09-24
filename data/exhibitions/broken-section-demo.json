@@ -1,0 +1,36 @@
+{
+  "id": "broken-section-demo",
+  "title": "완료 기준 검증용 — 잘못된 섹션이 섞인 기획전",
+  "period": { "start": "2026-01-01", "end": "2099-12-31" },
+  "sections": [
+    {
+      "type": "heroBanner",
+      "id": "hero",
+      "props": {
+        "title": "이 배너는 정상적으로 보여야 한다",
+        "image": { "pc": "/globe.svg", "mo": "/window.svg", "alt": "정상 배너" }
+      }
+    },
+    {
+      "type": "totallyUnknownModuleType",
+      "id": "unknown",
+      "props": { "whatever": true }
+    },
+    {
+      "type": "benefitCards",
+      "id": "broken-benefits",
+      "props": {
+        "items": [{ "icon": "gift", "title": "제목만 있고 description 없음" }]
+      }
+    },
+    {
+      "type": "benefitCards",
+      "id": "valid-benefits",
+      "props": {
+        "items": [
+          { "icon": "gift", "title": "이 카드는 정상 렌더링돼야 한다", "description": "정상 설명" }
+        ]
+      }
+    }
+  ]
+}

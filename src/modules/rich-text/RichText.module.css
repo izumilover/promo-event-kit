@@ -1,0 +1,28 @@
+/**
+ * @file RichText.module.css
+ * @description RichText.tsx 스타일
+ * @author kamiz
+ * @created 2026-09-28
+ * @modified 2026-09-28
+ */
+
+.wrapper {
+  max-width: 720px;
+}
+
+.heading {
+  margin: var(--space-5) 0 var(--space-3);
+}
+
+.paragraph {
+  margin: 0 0 var(--space-3);
+  color: var(--color-fg);
+  line-height: 1.7;
+}
+
+.list {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-6);
+  color: var(--color-fg);
+  line-height: 1.7;
+}

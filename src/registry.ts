@@ -5,7 +5,7 @@
  *   그 모듈을 바로 렌더링할 수 있게 된다(CLAUDE.md "모듈 추가 절차" 6단계).
  * @author kamiz
  * @created 2026-09-23
- * @modified 2026-09-24
+ * @modified 2026-09-28
  */
 import type { ComponentType } from "react";
 import type { ZodType } from "zod";
@@ -31,6 +31,12 @@ import { CouponDownload } from "@/modules/coupon-download/CouponDownload";
 import { CouponDownloadSchema } from "@/modules/coupon-download/schema";
 import { EventEntryForm } from "@/modules/event-entry-form/EventEntryForm";
 import { EventEntryFormSchema } from "@/modules/event-entry-form/schema";
+import { VideoBlock } from "@/modules/video-block/VideoBlock";
+import { VideoBlockSchema } from "@/modules/video-block/schema";
+import { RichText } from "@/modules/rich-text/RichText";
+import { RichTextSchema } from "@/modules/rich-text/schema";
+import { ImageMap } from "@/modules/image-map/ImageMap";
+import { ImageMapSchema } from "@/modules/image-map/schema";
 
 export type ModuleRegistryEntry<TProps = unknown> = {
   component: ComponentType<TProps>;
@@ -58,4 +64,7 @@ export const moduleRegistry: Record<string, ModuleRegistryEntry<any>> = {
   shareBar: { component: ShareBar, schema: ShareBarSchema },
   couponDownload: { component: CouponDownload, schema: CouponDownloadSchema },
   eventEntryForm: { component: EventEntryForm, schema: EventEntryFormSchema },
+  videoBlock: { component: VideoBlock, schema: VideoBlockSchema },
+  richText: { component: RichText, schema: RichTextSchema },
+  imageMap: { component: ImageMap, schema: ImageMapSchema },
 };

@@ -1,0 +1,17 @@
+/**
+ * @file ImageMap.module.css
+ * @description ImageMap.tsx 스타일
+ * @author kamiz
+ * @created 2026-09-28
+ * @modified 2026-09-28
+ */
+
+.wrapper {
+  max-width: 100%;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}

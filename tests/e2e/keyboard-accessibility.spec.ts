@@ -4,7 +4,7 @@
  *   마우스 클릭이 아니라 실제 포커스 이동 + 키보드 입력(Enter/Space)만으로 상호작용한다.
  * @author kamiz
  * @created 2026-09-24
- * @modified 2026-09-24
+ * @modified 2026-09-28
  */
 import { test, expect } from "@playwright/test";
 
@@ -24,7 +24,8 @@ test.describe("키보드만으로 조작 가능해야 하는 모듈들", () => {
     await page.goto("/exhibitions/autumn-sale");
     await expect(page.getByText("한정 수량 특가")).toBeVisible();
 
-    const nextButton = page.getByRole("button", { name: "다음 슬라이드" });
+    // autumn-sale에는 배너 캐러셀이 2개 있으므로(#promo, #product-lineup) 첫 번째로 범위를 좁힌다
+    const nextButton = page.locator("#promo").getByRole("button", { name: "다음 슬라이드" });
     await nextButton.focus();
     await page.keyboard.press("Enter");
 
@@ -33,7 +34,7 @@ test.describe("키보드만으로 조작 가능해야 하는 모듈들", () => {
 
   test("AnchorTabs: 탭을 Enter로 활성화하면 aria-selected가 바뀐다", async ({ page }) => {
     await page.goto("/exhibitions/autumn-sale");
-    const productsTab = page.getByRole("tab", { name: "상품" });
+    const productsTab = page.getByRole("tab", { name: "제품라인업" });
     await productsTab.focus();
     await page.keyboard.press("Enter");
 

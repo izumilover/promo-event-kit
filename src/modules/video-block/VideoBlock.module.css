@@ -1,0 +1,24 @@
+/**
+ * @file VideoBlock.module.css
+ * @description VideoBlock.tsx 스타일 — 16:9 반응형 비율 유지
+ * @author kamiz
+ * @created 2026-09-28
+ * @modified 2026-09-28
+ */
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

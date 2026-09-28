@@ -4,11 +4,11 @@
   "orientationNote": "정적 + 경량 mock Route Handler (backend-dev 미투입, 오케스트레이터가 직접 작성)",
   "collaboration": "team",
   "collaborationNote": "실제 1인 + 가상 4역할(A/B/C/D) 브랜치 시뮬레이션, PR 리뷰는 다른 Claude 세션",
-  "branch": "main",
+  "branch": "feat/p2-modules",
   "phase": "report",
-  "matchRate": "6/6 완료 기준 실증 검증 완료",
+  "matchRate": "6/6 완료 기준 실증 검증 완료 + P2 선택 모듈 3종 추가",
   "iterationCount": 0,
-  "prUrl": null,
-  "note": "A/B/C/D 전부 main 병합 완료. docs/plan.md Day 1~10 전체 완료 — 모듈 카탈로그(P0 6개+P1 4개), CLAUDE.md 완료 기준 6개 항목 실증, README, /new-module 커스텀 명령까지. 남은 건 선택 사항: P2 모듈(VideoBlock/RichText/ImageMap), Vercel 실제 배포(계정 필요 — 사용자 액션)",
-  "updatedAt": "2026-09-24T12:20:00Z"
+  "prUrl": "https://github.com/izumilover/promo-event-kit/pull/7",
+  "note": "A/B/C/D 전부 main 병합 완료, Vercel 배포 완료(사용자 액션). P2 선택 모듈(VideoBlock/RichText/ImageMap) 구현 완료 — registry 등록, winter-event.json 실사용 예시, format/lint/typecheck/test(51개)/build/e2e(8개)/storybook(63개 스토리) 전부 통과, PR #7 CI green. 검증 중 발견한 기존 회귀(autumn-sale 콘텐츠 변경으로 깨진 keyboard-accessibility e2e 셀렉터)도 같이 수정. 병합 확인 대기 중.",
+  "updatedAt": "2026-09-28T05:55:00Z"
 }

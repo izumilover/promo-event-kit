@@ -23,6 +23,15 @@ const eslintConfig = defineConfig([
     "storybook-static/**",
   ]),
   ...storybook.configs["flat/recommended"],
+  {
+    // storybook/viewport(내장 애드온, Storybook 9+부터 "storybook" 코어 패키지의
+    // 서브패스 export)를 no-uninstalled-addons가 아직 인식하지 못해서(별도 npm 패키지로
+    // 설치된 게 아니라서) 오탐한다 — ignore 옵션으로 예외 처리
+    files: [".storybook/main.@(js|cjs|mjs|ts)"],
+    rules: {
+      "storybook/no-uninstalled-addons": ["error", { ignore: ["storybook/viewport"] }],
+    },
+  },
 ]);
 
 export default eslintConfig;

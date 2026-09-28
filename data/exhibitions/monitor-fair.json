@@ -11,7 +11,11 @@
         "title": "모니터, 선택은 쉽게 경험은 다르게",
         "subtitle": "다양한 라인업을 한 곳에서 비교하고 나에게 맞는 모니터를 찾아보세요",
         "periodLabel": "2026.9.1 ~ 2026.9.30",
-        "image": { "pc": "/window.svg", "mo": "/next.svg", "alt": "모니터 라인업 기획전" },
+        "image": {
+          "pc": "/samples/hero-monitor-pc.svg",
+          "mo": "/samples/hero-monitor-mo.svg",
+          "alt": "모니터 라인업 기획전"
+        },
         "cta": { "label": "베스트 모델 보기", "href": "#best-model" }
       }
     },
@@ -71,35 +75,35 @@
             "id": "m1",
             "name": "스마트 모니터 32형 4K",
             "price": 890000,
-            "image": { "src": "/globe.svg", "alt": "스마트 모니터 32형" },
+            "image": { "src": "/samples/monitor-smart.svg", "alt": "스마트 모니터 32형" },
             "href": "#"
           },
           {
             "id": "m2",
             "name": "OLED 게이밍 모니터 45형",
             "price": 1690000,
-            "image": { "src": "/window.svg", "alt": "OLED 게이밍 모니터 45형" },
+            "image": { "src": "/samples/monitor-oled.svg", "alt": "OLED 게이밍 모니터 45형" },
             "href": "#"
           },
           {
             "id": "m3",
             "name": "게이밍 모니터 27형 240Hz",
             "price": 450000,
-            "image": { "src": "/next.svg", "alt": "게이밍 모니터 27형" },
+            "image": { "src": "/samples/monitor-gaming.svg", "alt": "게이밍 모니터 27형" },
             "href": "#"
           },
           {
             "id": "m4",
             "name": "고해상도 모니터 40형",
             "price": 990000,
-            "image": { "src": "/file.svg", "alt": "고해상도 모니터 40형" },
+            "image": { "src": "/samples/monitor-highres.svg", "alt": "고해상도 모니터 40형" },
             "href": "#"
           },
           {
             "id": "m5",
             "name": "와이드 모니터 34형",
             "price": 520000,
-            "image": { "src": "/vercel.svg", "alt": "와이드 모니터 34형" },
+            "image": { "src": "/samples/monitor-wide.svg", "alt": "와이드 모니터 34형" },
             "href": "#"
           }
         ]
@@ -138,7 +142,7 @@
             "id": "b1",
             "name": "게이밍 모니터 27형 240Hz",
             "price": 450000,
-            "image": { "src": "/next.svg", "alt": "게이밍 모니터 27형" },
+            "image": { "src": "/samples/monitor-gaming.svg", "alt": "게이밍 모니터 27형" },
             "href": "#"
           },
           {
@@ -146,14 +150,14 @@
             "name": "OLED 게이밍 모니터 45형",
             "price": 1690000,
             "originalPrice": 1990000,
-            "image": { "src": "/window.svg", "alt": "OLED 게이밍 모니터 45형" },
+            "image": { "src": "/samples/monitor-oled.svg", "alt": "OLED 게이밍 모니터 45형" },
             "href": "#"
           },
           {
             "id": "b3",
             "name": "스마트 모니터 32형 4K",
             "price": 890000,
-            "image": { "src": "/globe.svg", "alt": "스마트 모니터 32형" },
+            "image": { "src": "/samples/monitor-smart.svg", "alt": "스마트 모니터 32형" },
             "href": "#"
           },
           {
@@ -161,7 +165,7 @@
             "name": "와이드 모니터 34형",
             "price": 520000,
             "originalPrice": 620000,
-            "image": { "src": "/vercel.svg", "alt": "와이드 모니터 34형" },
+            "image": { "src": "/samples/monitor-wide.svg", "alt": "와이드 모니터 34형" },
             "href": "#"
           }
         ]

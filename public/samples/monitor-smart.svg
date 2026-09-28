@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="스마트 모니터">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede9fe" />
+      <stop offset="100%" stop-color="#f5d0fe" />
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)" />
+  <g transform="translate(90 170)">
+    <rect x="0" y="0" width="420" height="240" rx="18" fill="#1e1b2e" />
+    <rect x="16" y="16" width="388" height="208" rx="10" fill="url(#screen)" />
+    <!-- 위젯형 UI(스마트 기능) 아이콘 -->
+    <rect x="48" y="48" width="110" height="60" rx="8" fill="#ffffff" opacity="0.85" />
+    <rect x="170" y="48" width="60" height="60" rx="8" fill="#ffffff" opacity="0.6" />
+    <circle cx="330" cy="78" r="30" fill="#ffffff" opacity="0.7" />
+    <rect x="48" y="124" width="308" height="12" rx="6" fill="#ffffff" opacity="0.4" />
+    <rect x="48" y="148" width="220" height="12" rx="6" fill="#ffffff" opacity="0.3" />
+    <rect x="195" y="240" width="30" height="34" fill="#1e1b2e" />
+    <rect x="150" y="274" width="120" height="12" rx="6" fill="#1e1b2e" />
+  </g>
+</svg>

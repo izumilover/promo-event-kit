@@ -1,0 +1,188 @@
+{
+  "id": "monitor-fair",
+  "title": "모니터 라인업 총집합 기획전",
+  "period": { "start": "2026-09-01", "end": "2026-09-30" },
+  "theme": { "accent": "#7c3aed" },
+  "sections": [
+    {
+      "type": "heroBanner",
+      "id": "hero",
+      "props": {
+        "title": "모니터, 선택은 쉽게 경험은 다르게",
+        "subtitle": "다양한 라인업을 한 곳에서 비교하고 나에게 맞는 모니터를 찾아보세요",
+        "periodLabel": "2026.9.1 ~ 2026.9.30",
+        "image": { "pc": "/window.svg", "mo": "/next.svg", "alt": "모니터 라인업 기획전" },
+        "cta": { "label": "베스트 모델 보기", "href": "#best-model" }
+      }
+    },
+    {
+      "type": "anchorTabs",
+      "id": "tabs",
+      "props": {
+        "items": [
+          { "label": "구매혜택", "target": "purchase-benefit" },
+          { "label": "제품 라인업", "target": "product-lineup" },
+          { "label": "베스트 모델", "target": "best-model" }
+        ],
+        "sticky": true
+      }
+    },
+    {
+      "type": "benefitCards",
+      "id": "purchase-benefit",
+      "props": {
+        "items": [
+          {
+            "icon": "gift",
+            "title": "앱 전용 쿠폰",
+            "description": "최대 10만원 상당 앱 전용 쿠폰팩 증정"
+          },
+          {
+            "icon": "point",
+            "title": "포토리뷰 적립",
+            "description": "구매 후 포토리뷰 작성 시 최대 2만 포인트 적립"
+          },
+          {
+            "icon": "cardDiscount",
+            "title": "카드 결제 할인",
+            "description": "제휴 카드로 결제 시 최대 5% 즉시 할인"
+          }
+        ]
+      }
+    },
+    {
+      "type": "couponDownload",
+      "id": "coupon",
+      "props": {
+        "coupons": [
+          { "id": "c1", "amount": 10000, "minPrice": 50000, "endAt": "2026-09-30" },
+          { "id": "c2", "amount": 20000, "minPrice": 100000, "endAt": "2026-09-30" },
+          { "id": "c3", "amount": 50000, "minPrice": 300000, "endAt": "2026-09-30" }
+        ]
+      }
+    },
+    {
+      "type": "productSlider",
+      "id": "product-lineup",
+      "props": {
+        "showPrice": true,
+        "products": [
+          {
+            "id": "m1",
+            "name": "스마트 모니터 32형 4K",
+            "price": 890000,
+            "image": { "src": "/globe.svg", "alt": "스마트 모니터 32형" },
+            "href": "#"
+          },
+          {
+            "id": "m2",
+            "name": "OLED 게이밍 모니터 45형",
+            "price": 1690000,
+            "image": { "src": "/window.svg", "alt": "OLED 게이밍 모니터 45형" },
+            "href": "#"
+          },
+          {
+            "id": "m3",
+            "name": "게이밍 모니터 27형 240Hz",
+            "price": 450000,
+            "image": { "src": "/next.svg", "alt": "게이밍 모니터 27형" },
+            "href": "#"
+          },
+          {
+            "id": "m4",
+            "name": "고해상도 모니터 40형",
+            "price": 990000,
+            "image": { "src": "/file.svg", "alt": "고해상도 모니터 40형" },
+            "href": "#"
+          },
+          {
+            "id": "m5",
+            "name": "와이드 모니터 34형",
+            "price": 520000,
+            "image": { "src": "/vercel.svg", "alt": "와이드 모니터 34형" },
+            "href": "#"
+          }
+        ]
+      }
+    },
+    {
+      "type": "richText",
+      "id": "guide",
+      "props": {
+        "blocks": [
+          { "type": "heading", "text": "모니터 고르는 법", "level": 2 },
+          {
+            "type": "paragraph",
+            "text": "용도에 따라 필요한 모니터 종류가 다릅니다. 아래 기준을 참고해 나에게 맞는 라인업을 선택해보세요."
+          },
+          {
+            "type": "list",
+            "items": [
+              "사무·재택근무용 — 스마트 모니터 (웹 브라우징, 화상회의 앱 내장)",
+              "고사양 게임용 — OLED·게이밍 모니터 (빠른 응답속도, 높은 주사율)",
+              "사진·영상 작업용 — 고해상도 모니터 (넓은 색영역)",
+              "멀티태스킹용 — 와이드 모니터 (한 화면에 여러 창 배치)"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "productGrid",
+      "id": "best-model",
+      "props": {
+        "columns": 4,
+        "showPrice": true,
+        "products": [
+          {
+            "id": "b1",
+            "name": "게이밍 모니터 27형 240Hz",
+            "price": 450000,
+            "image": { "src": "/next.svg", "alt": "게이밍 모니터 27형" },
+            "href": "#"
+          },
+          {
+            "id": "b2",
+            "name": "OLED 게이밍 모니터 45형",
+            "price": 1690000,
+            "originalPrice": 1990000,
+            "image": { "src": "/window.svg", "alt": "OLED 게이밍 모니터 45형" },
+            "href": "#"
+          },
+          {
+            "id": "b3",
+            "name": "스마트 모니터 32형 4K",
+            "price": 890000,
+            "image": { "src": "/globe.svg", "alt": "스마트 모니터 32형" },
+            "href": "#"
+          },
+          {
+            "id": "b4",
+            "name": "와이드 모니터 34형",
+            "price": 520000,
+            "originalPrice": 620000,
+            "image": { "src": "/vercel.svg", "alt": "와이드 모니터 34형" },
+            "href": "#"
+          }
+        ]
+      }
+    },
+    {
+      "type": "noticeAccordion",
+      "id": "notice",
+      "props": {
+        "items": [
+          "쿠폰은 1개당 1개 제품에만 적용되며, 동일 상품 복수 구매 시에는 중복 적용되지 않습니다.",
+          "포토리뷰 적립 포인트는 리뷰 작성 확인 후 순차 지급됩니다.",
+          "프로모션 가격 및 재고는 예고 없이 변경될 수 있습니다.",
+          "본 페이지의 상품 정보는 샘플이며 실제 판매 상품이 아닙니다."
+        ]
+      }
+    },
+    {
+      "type": "shareBar",
+      "id": "share",
+      "props": { "channels": ["kakao", "facebook", "url"] }
+    }
+  ]
+}

@@ -3,7 +3,7 @@
  * @description AnchorTabs.tsx 스타일 — sticky 탭바 + 활성 탭 하이라이트
  * @author kamiz
  * @created 2026-09-24
- * @modified 2026-09-24
+ * @modified 2026-09-28
  */
 
 .tabs {
@@ -39,5 +39,5 @@
 .active {
   color: var(--color-fg);
   font-weight: 600;
-  border-bottom-color: var(--color-accent);
+  border-bottom-color: var(--exhibition-accent, var(--color-accent));
 }

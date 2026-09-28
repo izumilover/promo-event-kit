@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 900" role="img" aria-label="모니터 라인업 기획전 배너">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764" />
+      <stop offset="55%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c4b5fd" />
+      <stop offset="100%" stop-color="#f9a8d4" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="750" height="900" fill="url(#bgGrad)" />
+  <circle cx="600" cy="180" r="240" fill="url(#glow)" />
+  <circle cx="120" cy="720" r="200" fill="url(#glow)" />
+
+  <text x="60" y="120" font-family="sans-serif" font-size="40" font-weight="700" fill="#ffffff" opacity="0.9">
+    MONITOR FAIR
+  </text>
+
+  <!-- 중앙 메인 모니터 -->
+  <g transform="translate(115 260)">
+    <rect x="0" y="0" width="520" height="320" rx="20" fill="#1a1a2e" />
+    <rect x="18" y="18" width="484" height="284" rx="10" fill="url(#screenGrad)" />
+    <rect x="60" y="60" width="180" height="18" rx="9" fill="#ffffff" opacity="0.55" />
+    <rect x="60" y="92" width="260" height="14" rx="7" fill="#ffffff" opacity="0.4" />
+    <circle cx="420" cy="220" r="46" fill="#ffffff" opacity="0.25" />
+    <rect x="240" y="320" width="40" height="46" fill="#1a1a2e" />
+    <rect x="170" y="366" width="180" height="16" rx="8" fill="#1a1a2e" />
+  </g>
+
+  <!-- 아래쪽 보조 모니터 -->
+  <g transform="translate(180 660) scale(0.65)" opacity="0.6">
+    <rect x="0" y="0" width="380" height="230" rx="14" fill="#0f0f1a" />
+    <rect x="12" y="12" width="356" height="206" rx="8" fill="#2e1065" />
+    <rect x="12" y="206" width="356" height="6" fill="#f472b6" />
+  </g>
+</svg>

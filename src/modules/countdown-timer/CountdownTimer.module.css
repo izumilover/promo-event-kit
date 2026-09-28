@@ -3,13 +3,13 @@
  * @description CountdownTimer.tsx 스타일
  * @author kamiz
  * @created 2026-09-24
- * @modified 2026-09-24
+ * @modified 2026-09-28
  */
 
 .timer {
   font-variant-numeric: tabular-nums;
   font-size: var(--text-lg);
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--exhibition-accent, var(--color-accent));
   margin: 0;
 }

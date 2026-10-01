@@ -172,6 +172,37 @@
       }
     },
     {
+      "type": "reviewCarousel",
+      "id": "reviews",
+      "props": {
+        "reviews": [
+          {
+            "id": "r1",
+            "authorName": "김민수",
+            "rating": 5,
+            "content": "화면이 정말 선명하고 240Hz라 게임할 때 체감이 확실히 다릅니다. 배송도 빨랐어요.",
+            "photo": { "src": "/samples/monitor-gaming.svg", "alt": "게이밍 모니터 설치 사진" },
+            "createdAt": "2026-09-18"
+          },
+          {
+            "id": "r2",
+            "authorName": "이지은",
+            "rating": 4,
+            "content": "4K 화질 만족스럽고 스마트 기능도 자주 씁니다. 다만 스탠드가 조금 커요.",
+            "createdAt": "2026-09-15"
+          },
+          {
+            "id": "r3",
+            "authorName": "박서준",
+            "rating": 5,
+            "content": "OLED라 색감이 확실히 다르네요. 커브드 화면 몰입감이 좋습니다.",
+            "photo": { "src": "/samples/monitor-oled.svg", "alt": "OLED 모니터 설치 사진" },
+            "createdAt": "2026-09-10"
+          }
+        ]
+      }
+    },
+    {
       "type": "noticeAccordion",
       "id": "notice",
       "props": {

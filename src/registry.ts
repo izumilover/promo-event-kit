@@ -5,7 +5,7 @@
  *   그 모듈을 바로 렌더링할 수 있게 된다(CLAUDE.md "모듈 추가 절차" 6단계).
  * @author kamiz
  * @created 2026-09-23
- * @modified 2026-09-28
+ * @modified 2026-10-01
  */
 import type { ComponentType } from "react";
 import type { ZodType } from "zod";
@@ -37,6 +37,8 @@ import { RichText } from "@/modules/rich-text/RichText";
 import { RichTextSchema } from "@/modules/rich-text/schema";
 import { ImageMap } from "@/modules/image-map/ImageMap";
 import { ImageMapSchema } from "@/modules/image-map/schema";
+import { ReviewCarousel } from "@/modules/review-carousel/ReviewCarousel";
+import { ReviewCarouselSchema } from "@/modules/review-carousel/schema";
 
 export type ModuleRegistryEntry<TProps = unknown> = {
   component: ComponentType<TProps>;
@@ -67,4 +69,5 @@ export const moduleRegistry: Record<string, ModuleRegistryEntry<any>> = {
   videoBlock: { component: VideoBlock, schema: VideoBlockSchema },
   richText: { component: RichText, schema: RichTextSchema },
   imageMap: { component: ImageMap, schema: ImageMapSchema },
+  reviewCarousel: { component: ReviewCarousel, schema: ReviewCarouselSchema },
 };

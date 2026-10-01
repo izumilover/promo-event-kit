@@ -1,0 +1,100 @@
+/**
+ * @file ReviewCarousel.module.css
+ * @description ReviewCarousel.tsx 스타일 — scroll-snap 가로 스크롤 트랙.
+ *   카드 폭은 768px 미만 85vw, 768px 이상 280px 고정(product-slider와 동일 패턴).
+ * @author kamiz
+ * @created 2026-10-01
+ * @modified 2026-10-01
+ */
+
+.wrapper {
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--space-2);
+}
+
+.item {
+  flex: 0 0 85vw;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex: 0 0 280px;
+  }
+}
+
+.photoWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-subtle);
+}
+
+.photo {
+  object-fit: cover;
+}
+
+.author {
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-fg);
+}
+
+.rating {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: var(--text-md);
+}
+
+.date {
+  font-size: var(--text-xs);
+  color: var(--color-fg-muted);
+}
+
+.content {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-fg);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.controls {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.controls button {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+  font-size: var(--text-md);
+}
+
+.controls button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
